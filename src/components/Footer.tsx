@@ -21,116 +21,79 @@ export function Footer() {
     setModalContent({ ...modalContent, isOpen: false });
   };
 
-  const privacyPolicy = `Privacy Policy
+  const privacyPolicy = `This privacy policy explains how Akkaya Pilates collects, uses, and protects personal data.
+We are committed to safeguarding your privacy and complying with GDPR / AVG regulations.
+ 
+1. Information We Collect
+ 
+1.1. Personal data voluntarily provided during class registration, such as name, contact details, and health information.
+1.2. Attendance, progress, and feedback may be recorded to improve service quality.
+ 
+2. Use of Information
+ 
+2.1. Data is used for scheduling, communication, payment tracking, and ensuring safe instruction.
+2.2. Health information is treated confidentially and used solely to tailor safe and effective sessions.
+2.3. Contact details may be used for schedule updates, notifications, or payment reminders.
+ 
+3. Data Protection
+ 
+3.1. Data is protected against unauthorized access or misuse.
+3.2. Personal data is stored only as long as necessary and deleted according to legal requirements.
+ 
+4. Sharing of Information
+ 
+4.1. Data may be shared only with instructors working under Akkaya Pilates.
+4.2. No data will be shared with third parties unless legally required.
+ 
+5. Your Rights
+ 
+5.1. You have the right to access, correct, or delete your personal data.
+5.2. Contact us to exercise these rights.
+ 
+6. Changes
+ 
+6.1. This privacy policy may be updated as needed. The latest version will always be available on our website.
 
-Last updated: October 31, 2025
+`;
 
-At Akkaya Pilates, we value your privacy and are committed to protecting your personal information.
+  const termsAndConditions = `1. Registration and Participation
+ 
+1.1. By registering with Akkaya Pilates, participants agree to these terms and conditions.
+1.2. Participants must be at least 18 years old.
+1.3. All provided information must be accurate and complete.
+ 
+2. Payment
+ 
+2.1. Payments must be made before the start of each session.
+2.2. Accepted payment methods: Tikkie (digital link), bank transfer, or cash.
+2.3. Late or missing payments may result in suspension of participation rights.
+ 
+3. Cancellation and Make-up
+ 
+3.1. Classes must be cancelled at least 24 hours in advance; otherwise, the session will be charged.
+3.2. Payments are non-refundable.
+3.3. Missed sessions may be rescheduled depending on availability.
+3.4. Schedule changes will be communicated in advance when possible.
+ 
+4. Liability
+ 
+4.1. Participation is at your own risk. Akkaya Pilates cannot be held responsible for injury, loss, or damage.
+4.2. It is your responsibility to ensure that your health allows participation.
+4.3. Akkaya Pilates is not liable for damages caused by improper use of equipment.
+ 
+5. Right to Modify
+ 
+5.1. Akkaya Pilates reserves the right to modify class times, instructors, or content when necessary.
+`;
 
-Information We Collect
-We may collect personal information such as your name, email address, phone number, and health-related information necessary for providing our services.
+  const liabilityDisclaimer = `By participating in Akkaya Pilates classes, you acknowledge that physical activity carries inherent risks.
 
-How We Use Your Information
-- To provide and maintain our Pilates services
-- To communicate with you about bookings and schedules
-- To improve our services and customer experience
-- To comply with legal obligations
+While classes are conducted safely, each participant is responsible for respecting their physical limits.
 
-Data Security
-We implement appropriate security measures to protect your personal information from unauthorized access, alteration, disclosure, or destruction.
+Any pain or discomfort must be reported to the instructor immediately.
 
-Your Rights
-You have the right to:
-- Access your personal data
-- Request correction of your data
-- Request deletion of your data
-- Withdraw consent at any time
-
-Contact Us
-If you have any questions about this Privacy Policy, please contact us at info@akkayapilates.com.`;
-
-  const termsAndConditions = `Terms & Conditions
-
-Last updated: October 31, 2025
-
-Welcome to Akkaya Pilates. By booking and participating in our classes, you agree to these terms and conditions.
-
-Bookings and Payments
-- All bookings must be made in advance
-- Payment is required at the time of booking
-- Prices are subject to change with prior notice
-
-Cancellation Policy
-- Cancellations must be made at least 24 hours in advance
-- Late cancellations may result in a fee
-- No-shows will be charged the full session price
-
-Studio Rules
-- Arrive on time for your scheduled session
-- Wear appropriate workout attire and grip socks
-- Respect the equipment and studio space
-- Follow all instructor guidance
-- Inform us of any health conditions or injuries
-
-Health and Safety
-- Participants must be physically able to engage in Pilates exercises
-- We reserve the right to refuse service if we believe participation poses a health risk
-- Always consult your physician before starting any new exercise program
-
-Liability
-Please refer to our Liability Disclaimer for detailed information about our liability limitations.
-
-Changes to Terms
-We reserve the right to modify these terms at any time. Continued use of our services constitutes acceptance of modified terms.
-
-Contact
-For questions regarding these terms, please contact info@akkayapilates.com.`;
-
-  const liabilityDisclaimer = `Liability Disclaimer
-
-Last updated: October 31, 2025
-
-Important Notice: Please read this disclaimer carefully before participating in any Akkaya Pilates classes or activities.
-
-Assumption of Risk
-By participating in Reformer Pilates classes at Akkaya Pilates, you acknowledge that:
-- Physical exercise involves inherent risks of injury
-- You are voluntarily participating in these activities
-- You assume all risks associated with participation
-
-Health Representation
-You represent that:
-- You are in good physical condition
-- You have no medical condition that would prevent safe participation
-- You will immediately inform the instructor of any discomfort or pain during class
-- You have consulted with a physician if you have any health concerns
-
-Limitation of Liability
-To the maximum extent permitted by law:
-- Akkaya Pilates shall not be liable for any injuries or damages sustained during or as a result of participation in our classes
-- This includes injuries resulting from equipment use, instructor guidance, or facility conditions
-- Our liability is limited to the amount paid for the specific class or session
-
-Medical Advice Disclaimer
-- The instruction and guidance provided are not a substitute for medical advice
-- We do not diagnose, treat, or cure any medical conditions
-- Always consult appropriate medical professionals for health concerns
-
-Equipment and Facility Use
-- Participants must use equipment properly and follow all safety instructions
-- Misuse of equipment may result in injury for which we are not liable
-- Participants are responsible for their personal belongings
-
-Photography and Media
-- By attending classes, you consent to being photographed or recorded for promotional purposes unless you explicitly opt out
-
-Indemnification
-You agree to indemnify and hold harmless Akkaya Pilates, its instructors, and staff from any claims, damages, or expenses arising from your participation.
-
-Contact
-For questions about this disclaimer, contact info@akkayapilates.com.
-
-By participating in our classes, you acknowledge that you have read, understood, and agree to this Liability Disclaimer.`;
+Participation is entirely at your own risk; Akkaya Pilates cannot be held liable for injuries, discomfort, or loss.
+`;
 
   return (
     <footer className="bg-gray-900 text-white py-12 px-6">
