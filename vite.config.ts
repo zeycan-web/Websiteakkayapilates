@@ -4,7 +4,8 @@
   import path from 'path';
 
   export default defineConfig({
-    base: '/Websiteakkayapilates/',
+    // base: '/Websiteakkayapilates/', // This line is for deploying to GitHub Pages
+    base: '/', // This line is for deploying to root domain
     plugins: [react()],
     resolve: {
       extensions: ['.js', '.jsx', '.ts', '.tsx', '.json'],
