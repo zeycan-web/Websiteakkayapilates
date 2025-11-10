@@ -5,8 +5,31 @@ import { Button } from './ui/button';
 import { Input } from './ui/input';
 import { Textarea } from './ui/textarea';
 import { Label } from './ui/label';
-import { Mail, MapPin } from 'lucide-react';
+import { Facebook, Instagram, Mail, MapPin, MessageCircleMore } from 'lucide-react';
 import { toast } from 'sonner@2.0.3';
+
+const contactItems = [
+  {
+    icon: Mail,
+    href: "mailto:info@akkayapilates.com",
+    label: "info@akkayapilates.com",
+  },
+  {
+    icon: MapPin,
+    href: "https://www.google.com/maps?q=Penninkstraat+16,+7521+BT+Enschede",
+    label: "Penninkstraat 16, 7521BT Enschede",
+  },
+  {
+    icon: Instagram,
+    href: "https://instagram.com/akkaya.pilates/",
+    label: "Instagram: @akkaya.pilates",
+  },
+  {
+    icon: MessageCircleMore,
+    href: "https://wa.me/31651102668",
+    label: "Whatsapp: 0651102668",
+  },
+];
 
 export function Contact() {
   const ref = useRef(null);
@@ -37,7 +60,7 @@ export function Contact() {
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8 }}
         >
-          <h2 className="text-center mb-6 text-[20px]">Get in Touch</h2>
+          <h1 className="text-center mb-6">Get in Touch</h1>
           <p className="text-center text-gray-700 mb-12 max-w-2xl mx-auto">
             We'd love to hear from you! Reach out for class inquiries, schedules, or bookings.
           </p>
@@ -45,25 +68,22 @@ export function Contact() {
           <div className="grid md:grid-cols-2 gap-12">
             {/* Contact Info */}
             <div className="space-y-8">
-              <div className="flex items-start space-x-4">
-                <div className="bg-[#C7E8C3] p-3 rounded-lg">
-                  <Mail className="w-6 h-6 text-gray-800" />
-                </div>
-                <div>
-                  <p className="text-gray-700">info@akkayapilates.com</p>
-                </div>
-              </div>
 
-              <div className="flex items-start space-x-4">
+            {contactItems.map(({ icon: Icon, href, label }, index) => (
+              <div key={index} className="flex items-center space-x-4">
                 <div className="bg-[#C7E8C3] p-3 rounded-lg">
-                  <MapPin className="w-6 h-6 text-gray-800" />
+                  <Icon className="w-6 h-6 text-gray-800" />
                 </div>
-                <div>
-                  <p className="text-gray-700">Penninkstraat 16</p>
-                  <p className="text-gray-700">7521BT Enschede</p>
-                </div>
+                <a
+                  href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-700 hover:text-[#006400] transition-colors duration-300 hover:underline"
+                >
+                  {label}
+                </a>
               </div>
-
+            ))}
 
             </div>
             <div className="rounded-2xl overflow-hidden shadow-lg">

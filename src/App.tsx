@@ -1,6 +1,8 @@
 import { Hero } from './components/Hero';
 import { WhatIsReformer } from './components/WhatIsReformer';
 import { WhyAkkaya } from './components/WhyAkkaya';
+import { WhoIs } from './components/WhoIs';
+import { WhoIsItFor } from './components/WhoIsItFor';
 import { Pricing } from './components/Pricing';
 import { Contact } from './components/Contact';
 import { FAQ } from './components/FAQ';
@@ -13,6 +15,8 @@ export default function App() {
       <Hero />
       <WhatIsReformer />
       <WhyAkkaya />
+      <WhoIs />
+      <WhoIsItFor />
       <Pricing />
       <Contact />
       <FAQ />

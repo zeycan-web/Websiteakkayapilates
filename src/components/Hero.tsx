@@ -29,12 +29,12 @@ export function Hero() {
         >
           {/* LOGO will be here*/}
           
-          <h1 className="text-white mb-8 text-[36px]">
-            Akkaya Pilates
-          </h1>
+          <p className="text-white/95 mb-10 max-w-2xl mx-auto text-2xlg mb-4 italic">
+            Designed to move you — body, mind, and life.
+          </p>
           <p className="text-white/95 mb-10 max-w-2xl mx-auto text-lg">
-            Welcome to Akkaya Pilates — a boutique Reformer Pilates studio in the heart of Enschede, the Netherlands.
-            Here, fitness is redefined through personalized, mindful movement blending the precision of Pilates with the science of physiotherapy.
+           Welcome to Akkaya Pilates — a Reformer Pilates studio located in the heart of Enschede, the Netherlands.
+Here, fitness is redefined through mindful, personalised movement- combining the precision of Pilates with the science of physiotherapy.
           </p>
           <Button
             onClick={scrollToContact}

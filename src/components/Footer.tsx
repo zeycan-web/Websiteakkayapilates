@@ -65,7 +65,7 @@ We are committed to safeguarding your privacy and complying with GDPR / AVG regu
 2. Payment
  
 2.1. Payments must be made before the start of each session.
-2.2. Accepted payment methods: Tikkie (digital link), bank transfer, or cash.
+2.2. Accepted payment methods: Bank transfer or cash.
 2.3. Late or missing payments may result in suspension of participation rights.
  
 3. Cancellation and Make-up
@@ -84,6 +84,15 @@ We are committed to safeguarding your privacy and complying with GDPR / AVG regu
 5. Right to Modify
  
 5.1. Akkaya Pilates reserves the right to modify class times, instructors, or content when necessary.
+
+Studio Rules
+
+• Please arrive on time; if you are late, the session may be shortened.
+• Wear clean, comfortable clothing and appropriate socks.
+• Treat the equipment with care and report any damage immediately.
+• Follow the instructor’s guidance and do not push beyond your limits.
+• Inform the instructor of any health conditions before class.
+• Taking photos, videos, or recordings is only allowed with permission.
 `;
 
   const liabilityDisclaimer = `By participating in Akkaya Pilates classes, you acknowledge that physical activity carries inherent risks.
@@ -100,49 +109,28 @@ Participation is entirely at your own risk; Akkaya Pilates cannot be held liable
       <div className="max-w-6xl mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-center space-y-6 md:space-y-0">
           <p className="text-gray-400 text-sm">
-            © 2025 Akkaya Pilates | All rights reserved.
+            © 2025 Akkaya Pilates | All rights reserved | KVK: 98229494
           </p>
 
           <div className="flex items-center space-x-6">
             <button
               onClick={() => openModal('Privacy Policy', privacyPolicy)}
-              className="text-gray-400 hover:text-[#C7E8C3] transition-colors text-sm"
+              className="text-gray-400 hover:text-[#C7E8C3] transition-colors text-sm hover:cursor-pointer"
             >
               Privacy Policy
             </button>
             <button
               onClick={() => openModal('Terms & Conditions', termsAndConditions)}
-              className="text-gray-400 hover:text-[#C7E8C3] transition-colors text-sm"
+              className="text-gray-400 hover:text-[#C7E8C3] transition-colors text-sm hover:cursor-pointer"
             >
               Terms & Conditions
             </button>
             <button
               onClick={() => openModal('Liability Disclaimer', liabilityDisclaimer)}
-              className="text-gray-400 hover:text-[#C7E8C3] transition-colors text-sm"
+              className="text-gray-400 hover:text-[#C7E8C3] transition-colors text-sm hover:cursor-pointer"
             >
               Liability Disclaimer
             </button>
-          </div>
-
-          <div className="flex items-center space-x-4">
-            <a
-              href="https://instagram.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-400 hover:text-[#C7E8C3] transition-colors"
-              aria-label="Instagram"
-            >
-              <Instagram className="w-5 h-5" />
-            </a>
-            <a
-              href="https://facebook.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-gray-400 hover:text-[#C7E8C3] transition-colors"
-              aria-label="Facebook"
-            >
-              <Facebook className="w-5 h-5" />
-            </a>
           </div>
         </div>
       </div>
