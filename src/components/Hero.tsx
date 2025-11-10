@@ -1,6 +1,6 @@
 import { motion } from 'motion/react';
-import { ImageWithFallback } from './figma/ImageWithFallback';
 import { Button } from './ui/button';
+import heroImage from 'figma:asset/099d44bddcc50ab9cbd9bfa5a0e547465fc2fbe4.png';
 
 export function Hero() {
   const scrollToContact = () => {
@@ -13,8 +13,8 @@ export function Hero() {
   return (
     <section className="relative h-screen flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0 z-0">
-        <ImageWithFallback
-          src="https://images.unsplash.com/photo-1754258166816-0075fe0132ce?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwaWxhdGVzJTIwcmVmb3JtZXIlMjBzdHVkaW98ZW58MXx8fHwxNzYxODk2MjczfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+        <img
+          src={heroImage}
           alt="Pilates Reformer Studio"
           className="w-full h-full object-cover"
         />

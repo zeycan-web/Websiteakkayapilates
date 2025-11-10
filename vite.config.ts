@@ -4,7 +4,6 @@
   import path from 'path';
 
   export default defineConfig({
-    base: '/Websiteakkayapilates/',
     plugins: [react()],
     resolve: {
       extensions: ['.js', '.jsx', '.ts', '.tsx', '.json'],
@@ -18,6 +17,7 @@
         'next-themes@0.4.6': 'next-themes',
         'lucide-react@0.487.0': 'lucide-react',
         'input-otp@1.4.2': 'input-otp',
+        'figma:asset/099d44bddcc50ab9cbd9bfa5a0e547465fc2fbe4.png': path.resolve(__dirname, './src/assets/099d44bddcc50ab9cbd9bfa5a0e547465fc2fbe4.png'),
         'embla-carousel-react@8.6.0': 'embla-carousel-react',
         'cmdk@1.1.1': 'cmdk',
         'class-variance-authority@0.7.1': 'class-variance-authority',
