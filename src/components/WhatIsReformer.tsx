@@ -2,6 +2,7 @@ import { motion } from 'motion/react';
 import { ImageWithFallback } from './figma/ImageWithFallback';
 import { useInView } from 'motion/react';
 import { useRef } from 'react';
+import image from '../assets/05.jpg';
 
 export function WhatIsReformer() {
   const ref = useRef(null);
@@ -17,7 +18,7 @@ export function WhatIsReformer() {
             transition={{ duration: 0.8 }}
           >
             <ImageWithFallback
-              src="https://images.unsplash.com/photo-1754258166780-c20a15d43798?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwaWxhdGVzJTIwcmVmb3JtZXIlMjBlcXVpcG1lbnR8ZW58MXx8fHwxNzYxODc5ODMyfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+              src={image}
               alt="Reformer Pilates Equipment"
               className="rounded-2xl shadow-lg w-full h-[500px] object-cover"
             />

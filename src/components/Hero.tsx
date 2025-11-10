@@ -1,7 +1,7 @@
 import { motion } from 'motion/react';
 import { Button } from './ui/button';
 import heroImage from '../assets/01.jpg';
-import logo from 'figma:asset/74bcb0c56279e3764dde34e8ba60b7020e6d4068.png';
+import logo from '../assets/00-logo-akkaya-pilates.png';
 
 export function Hero() {
   const scrollToContact = () => {
@@ -44,10 +44,10 @@ export function Hero() {
         >
           {/* LOGO will be here*/}
           
-          <p className="text-white/95 max-w-2xl mx-auto text-5xl mb-4 italic">
+          <p className="text-white/95 max-w-2xl mx-auto mb-4 italic text-5xl">
             Designed to move you
           </p>
-          <p className="text-white/95 max-w-2xl mx-auto text-5xl mb-4 italic">
+          <p className="text-white/95 max-w-2xl mx-auto mb-4 italic text-5xl">
             Body • Mind • Life
           </p>
           <p className="text-white/95 mb-10 max-w-2xl mx-auto text-lg">

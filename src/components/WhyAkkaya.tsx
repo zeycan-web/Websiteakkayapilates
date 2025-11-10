@@ -2,6 +2,7 @@ import { motion } from 'motion/react';
 import { ImageWithFallback } from './figma/ImageWithFallback';
 import { useInView } from 'motion/react';
 import { useRef } from 'react';
+import image from '../assets/03.jpg';
 
 export function WhyAkkaya() {
   const ref = useRef(null);
@@ -43,7 +44,7 @@ export function WhyAkkaya() {
             className="order-1 md:order-2"
           >
             <ImageWithFallback
-              src="https://images.unsplash.com/photo-1728498852323-6b91113f9111?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwaWxhdGVzJTIwaW5zdHJ1Y3RvciUyMHRlYWNoaW5nfGVufDF8fHx8MTc2MTg5NjI3NHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+              src={image}
               alt="Pilates Instructor Teaching"
               className="rounded-2xl shadow-lg w-full h-[500px] object-cover"
             />
