@@ -20,7 +20,7 @@ const prices = [
   },
   { 
     type: '2:1 Duo Sessions', 
-    price: '€30 per person per class', 
+    price: '€30 per person / per class', 
     people: '(2 people, once a week)',
     description: [
       'Train together in a supportive setting — with personalized attention for both participants.',
@@ -31,7 +31,7 @@ const prices = [
   },
   { 
     type: '3:1 Small Group Sessions', 
-    price: '€25 per person per class', 
+    price: '€25 per person / per class', 
     people: '(3 people, once a week)',
     description: [
       'Train together in a calm and supportive environment — with personalized guidance and focused attention for every participant.',
