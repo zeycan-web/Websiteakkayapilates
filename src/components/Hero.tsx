@@ -2,6 +2,7 @@ import { motion } from 'motion/react';
 import { Button } from './ui/button';
 import heroImage from '../assets/01.jpg';
 import logo from '../assets/00-logo-akkaya-pilates.png';
+import {MessageCircleMore} from 'lucide-react';
 
 export function Hero() {
   const scrollToContact = () => {
@@ -54,13 +55,29 @@ export function Hero() {
            Welcome to Akkaya Pilates — a Reformer Pilates studio located in the heart of Enschede, the Netherlands.
 Here, fitness is redefined through mindful, personalised movement- combining the precision of Pilates with the science of physiotherapy.
           </p>
-          <Button
-            onClick={scrollToContact}
-            size="lg"
-            className="bg-[#C7E8C3] hover:bg-[#B5D9B1] text-gray-900 shadow-lg hover:shadow-xl transition-all"
-          >
-            Join Us
-          </Button>
+
+          <div className="flex flex-col items-center gap-4">
+            <Button
+              onClick={scrollToContact}
+              size="lg"
+              className="hover:cursor-pointer bg-[#C7E8C3] hover:bg-[#B5D9B1] text-gray-900 shadow-lg hover:shadow-xl"
+            >
+              Join Us
+            </Button>
+
+            <Button
+              onClick={() => window.open(
+                'https://wa.me/31651102668',
+                '_blank',
+                'noopener,noreferrer'
+              )}
+              size="lg"
+              className="hover:cursor-pointer bg-[#C7E8C3] hover:bg-[#B5D9B1] text-gray-900 shadow-lg hover:shadow-xl"
+            >
+              <MessageCircleMore className="w-5 h-5" />
+              <span className="font-medium">Whatsapp Us</span>
+            </Button>
+</div>
         </motion.div>
       </div>
     </section>
