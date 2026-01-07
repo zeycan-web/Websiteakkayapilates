@@ -79,7 +79,7 @@ export function Hero() {
               className="hover:cursor-pointer bg-[#C7E8C3] hover:bg-[#B5D9B1] text-gray-900 shadow-lg hover:shadow-xl"
             >
               <MessageCircleMore className="w-5 h-5" />
-              <span className="font-medium">Whatsapp Us</span>
+              <span className="font-medium">WhatsApp Us</span>
             </Button>
           </div>
         </motion.div>
