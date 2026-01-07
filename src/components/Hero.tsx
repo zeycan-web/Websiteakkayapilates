@@ -77,7 +77,7 @@ Here, fitness is redefined through mindful, personalised movement- combining the
               <MessageCircleMore className="w-5 h-5" />
               <span className="font-medium">Whatsapp Us</span>
             </Button>
-</div>
+          </div>
         </motion.div>
       </div>
     </section>
