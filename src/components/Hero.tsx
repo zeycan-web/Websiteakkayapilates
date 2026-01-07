@@ -2,7 +2,7 @@ import { motion } from 'motion/react';
 import { Button } from './ui/button';
 import heroImage from '../assets/01.jpg';
 import logo from '../assets/00-logo-akkaya-pilates.png';
-import {MessageCircleMore} from 'lucide-react';
+import { MessageCircleMore } from 'lucide-react';
 
 export function Hero() {
   const scrollToContact = () => {
@@ -44,7 +44,7 @@ export function Hero() {
           transition={{ duration: 0.8 }}
         >
           {/* LOGO will be here*/}
-          
+
           <p className="text-white/95 max-w-2xl mx-auto mb-4 italic text-5xl">
             Designed to move you
           </p>
@@ -52,8 +52,10 @@ export function Hero() {
             Body • Mind • Life
           </p>
           <p className="text-white/95 mb-10 max-w-2xl mx-auto text-lg">
-           Welcome to Akkaya Pilates — a Reformer Pilates studio located in the heart of Enschede, the Netherlands.
-Here, fitness is redefined through mindful, personalised movement- combining the precision of Pilates with the science of physiotherapy.
+            Welcome to Akkaya Pilates — a Reformer Pilates studio located in the
+            heart of Enschede, the Netherlands. Here, fitness is redefined
+            through mindful, personalised movement- combining the precision of
+            Pilates with the science of physiotherapy.
           </p>
 
           <div className="flex flex-col items-center gap-4">
@@ -66,11 +68,13 @@ Here, fitness is redefined through mindful, personalised movement- combining the
             </Button>
 
             <Button
-              onClick={() => window.open(
-                'https://wa.me/31651102668',
-                '_blank',
-                'noopener,noreferrer'
-              )}
+              onClick={() =>
+                window.open(
+                  'https://wa.me/31651102668',
+                  '_blank',
+                  'noopener,noreferrer',
+                )
+              }
               size="lg"
               className="hover:cursor-pointer bg-[#C7E8C3] hover:bg-[#B5D9B1] text-gray-900 shadow-lg hover:shadow-xl"
             >
