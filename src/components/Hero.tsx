@@ -5,10 +5,10 @@ import logo from '../assets/00-logo-akkaya-pilates.png';
 import { MessageCircleMore } from 'lucide-react';
 
 export function Hero() {
-  const scrollToContact = () => {
-    const contactSection = document.getElementById('contact');
-    if (contactSection) {
-      contactSection.scrollIntoView({ behavior: 'smooth' });
+  const scrollToPricing = () => {
+    const pricingSection = document.getElementById('pricing');
+    if (pricingSection) {
+      pricingSection.scrollIntoView({ behavior: 'smooth' });
     }
   };
 
@@ -60,7 +60,7 @@ export function Hero() {
 
           <div className="flex flex-col items-center gap-4">
             <Button
-              onClick={scrollToContact}
+              onClick={scrollToPricing}
               size="lg"
               className="hover:cursor-pointer bg-[#C7E8C3] hover:bg-[#B5D9B1] text-gray-900 shadow-lg hover:shadow-xl"
             >
